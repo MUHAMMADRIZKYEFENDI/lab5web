@@ -141,6 +141,7 @@ hasil browsernya!!!
 </html>
 ```
 hasil browser nya!!
+![Screenshot (266)](https://github.com/user-attachments/assets/0d74800a-c1b4-4ddf-b156-23bb30b518eb)
 
 ### 2.Seleksi kondisi (if..else) 
 ```
@@ -171,7 +172,7 @@ hasil browser nya!!
 </html>
 ```
 hasil browsernya!!
-
+![Screenshot (267)](https://github.com/user-attachments/assets/42ff86d7-6d0c-42a2-8fe1-57a3caf931d4)
 ### 3.Penggunaan operator switch untuk seleksi kondisi 
 ```
 <!DOCTYPE html>
@@ -215,6 +216,7 @@ hasil browsernya!!
 </html>
 ```
 hasil browsernya!!
+![Screenshot (268)](https://github.com/user-attachments/assets/d963d806-9f76-4966-a058-eaadd6e464c4)
 
 # Pembuatan Form 
 ### 1.Form Input
@@ -249,6 +251,7 @@ hasil browsernya!!
 </html>
 ```
 hasil browsernya!!
+
 ### 2.Form Button. 
 ```
 <!DOCTYPE html>
@@ -284,6 +287,9 @@ hasil browsernya!!
 
 </html>
 ```
+hasil browsernya!!
+![Screenshot (270)](https://github.com/user-attachments/assets/a4ef8e0d-c845-4c9c-80f5-59a4a3d2a877)
+
 # HTML DOM 
 ### Pilihan menggunakan checkBox dengan perhitungan otomatis
 ```
@@ -331,3 +337,4 @@ hasil browsernya!!
 ```
 hasil browsernya!!
 
+![Screenshot (271)](https://github.com/user-attachments/assets/c21ce041-3a7e-422f-893a-4c50236628da)
