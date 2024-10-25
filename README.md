@@ -25,3 +25,29 @@ Persiapan membuat dokumen HTML dengan nama file lab5_javascript.html seperti ber
 
 hasil browser nya sebagai berikut!!!
 ![Screenshot (255)](https://github.com/user-attachments/assets/5dbe3f4b-b042-412d-acf5-92a60eb72e28)
+
+# Javascrip Dasar 
+### 1.Pemakaian Alert sebagai property window.
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert box</title>
+</head>
+
+<body>
+    percobaan memakai javascript:<br>
+    <script language="JavaScript">
+        <!--document.write("selamat mecoba javascript<br>");
+        document.write("semoga sukses!");
+        //-->
+    </script>
+
+</body>
+
+</html>
+```
+hasil browsernya!!
