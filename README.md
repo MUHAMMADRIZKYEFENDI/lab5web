@@ -39,6 +39,27 @@ hasil browser nya sebagai berikut!!!
 </head>
 
 <body>
+    <script language="javascript">
+        <!--window.alert("ini merupakan pesan anda");//-->
+    </script>
+</body>
+
+</html>
+```
+hasil browsernya!!!
+
+### 2.Pemakaian method dalam objek 
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skrip javascript</title>
+</head>
+
+<body>
     percobaan memakai javascript:<br>
     <script language="JavaScript">
         <!--document.write("selamat mecoba javascript<br>");
@@ -51,3 +72,5 @@ hasil browser nya sebagai berikut!!!
 </html>
 ```
 hasil browsernya!!
+![Screenshot (256)](https://github.com/user-attachments/assets/957be0c5-5dff-4480-945a-b6c92b506564)
+
