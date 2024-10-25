@@ -339,3 +339,72 @@ hasil browsernya!!
 hasil browsernya!!
 
 ![Screenshot (271)](https://github.com/user-attachments/assets/c21ce041-3a7e-422f-893a-4c50236628da)
+
+# PERTANYAAN DAN TUGAS
+# 1. Buat script untuk melakukan validasi pada isian form.
+```
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form dengan Validasi</title>
+    <script>
+        function validateForm() {
+            // Mengambil nilai dari input
+            var nama = document.forms["myForm"]["nama"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var password = document.forms["myForm"]["password"].value;
+            var errorMessages = "";
+
+            // Validasi field nama
+            if (nama == "") {
+                errorMessages += "- Nama harus diisi.\n";
+            }
+
+            // Validasi format email
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email == "") {
+                errorMessages += "- Email harus diisi.\n";
+            } else if (!emailPattern.test(email)) {
+                errorMessages += "- Format email tidak valid.\n";
+            }
+
+            // Validasi password
+            if (password == "") {
+                errorMessages += "- Password harus diisi.\n";
+            } else if (password.length < 8) {
+                errorMessages += "- Password minimal 8 karakter.\n";
+            }
+
+            // Menampilkan pesan error jika ada
+            if (errorMessages != "") {
+                alert("Error:\n" + errorMessages);
+                return false; // Mencegah form dikirim jika ada error
+            }
+
+            return true; // Form akan dikirim jika tidak ada error
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Form Registrasi</h1>
+    <form name="myForm" onsubmit="return validateForm()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+
+</html>
+```
+HASIL BROWSERNYA
