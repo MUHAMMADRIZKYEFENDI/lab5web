@@ -24,3 +24,4 @@ Persiapan membuat dokumen HTML dengan nama file lab5_javascript.html seperti ber
 ```
 
 hasil browser nya sebagai berikut!!!
+![Screenshot (255)](https://github.com/user-attachments/assets/5dbe3f4b-b042-412d-acf5-92a60eb72e28)
