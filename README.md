@@ -90,7 +90,7 @@ hasil browsernya!!
 </html>
 ```
 hasil browsernya!!
-
+![Screenshot (259)](https://github.com/user-attachments/assets/de1aa8dd-ac5e-4df9-8b65-55502d913584)
 ### 4.Pembuatan fungsi dan cara pemanggilannya
 ```
 <!DOCTYPE html>
@@ -110,6 +110,224 @@ hasil browsernya!!
 </html>
 ```
 hasil browsernya!!!
+
+![Screenshot (260)](https://github.com/user-attachments/assets/1f41af63-1ed7-4057-98f0-757a8c4bbaa6)
+
 # Dasar Pemrograman Di Javascript 
 ### 1.Operasi dasar aritmatika
 ```
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Program JavaScript</title>
+    <script>
+        function test(val1, val2) {
+            document.write("<br>Perkalian: " + (val1 * val2) + "<br>");
+            document.write("Pembagian: " + (val1 / val2) + "<br>");
+            document.write("<br>Penjumlahan: " + (val1 + val2) + "<br>");
+            document.write("Pengurangan: " + (val1 - val2) + "<br>");
+            document.write("Pangkat: " + (Math.pow(val1, val2)) + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" name="button" value="Arithmetic" onclick="test(9.4, 2)">
+</body>
+
+</html>
+```
+hasil browser nya!!
+
+### 2.Seleksi kondisi (if..else) 
+```
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh If-Else</title>
+</head>
+
+<body>
+    <script>
+        var nilai = prompt("Nilai (0-100):");
+        var hasil;
+        
+        if (nilai >= 60) {
+            hasil = "lulus";
+        } else {
+            hasil = "tidak lulus";
+        }
+
+        document.write("Hasil: " + hasil);
+    </script>
+</body>
+
+</html>
+```
+hasil browsernya!!
+
+### 3.Penggunaan operator switch untuk seleksi kondisi 
+```
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Program JavaScript</title>
+    <script>
+        function test() {
+            var val = window.prompt("Input nilai (1-5):");
+            switch (val) {
+                case "1":
+                    document.write("Bilangan satu");
+                    break;
+                case "2":
+                    document.write("Bilangan dua");
+                    break;
+                case "3":
+                    document.write("Bilangan tiga");
+                    break;
+                case "4":
+                    document.write("Bilangan empat");
+                    break;
+                case "5":
+                    document.write("Bilangan lima");
+                    break;
+                default:
+                    document.write("Bilangan lainnya");
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" name="button" value="Switch" onclick="test()">
+</body>
+
+</html>
+```
+hasil browsernya!!
+
+# Pembuatan Form 
+### 1.Form Input
+```
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <script language="javascript">
+        function test() {
+            var val = document.kirim.T1.value;
+            if (val % 2 === 0) {
+                document.kirim.T2.value = "Bilangan genap";
+            } else {
+                document.kirim.T2.value = "Bilangan ganjil";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form method="POST" name="kirim">
+        <p>Nilai: <input type="text" name="T1" size="20"></p>
+        <p>MERUPAKAN BIL: <input type="text" name="T2" size="70" readonly></p>
+        <p><input type="button" value="TEBAK" name="btnTebak" onclick="test()"></p>
+    </form>
+</body>
+
+</html>
+```
+hasil browsernya!!
+### 2.Form Button. 
+```
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objek Document</title>
+    <script language="javascript">
+        function ubahLatarBelakang(warna) {
+            document.bgColor = warna;
+        }
+
+        function ubahWarnaTeks(warna) {
+            document.fgcolor = warna;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Tes</h1>
+    <form>
+        <input type="button" value="Latar Belakang Putih" onclick="ubahLatarBelakang('white')">
+        <input type="button" value="Latar Belakang Kuning" onclick="ubahLatarBelakang('yellow')">
+        <input type="button" value="Latar Belakang Biru" onclick="ubahLatarBelakang('blue')">
+    </form>
+
+    <script language="javascript">
+        document.write("Disindifikasi terakhir pada: " + document.lastModified);
+    </script>
+</body>
+
+</html>
+```
+# HTML DOM 
+### Pilihan menggunakan checkBox dengan perhitungan otomatis
+```
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu</title>
+    <script>
+        function hitung(ele) {
+            var total = document.getElementById("total").value;
+            total = (total ? parseInt(total) : 0);
+            var harga = 0;
+
+            if (ele.checked) {
+                harga = parseInt(ele.value);
+                total += harga; // Tambahkan harga ke total
+            } else {
+                harga = parseInt(ele.value);
+                total -= harga; // Kurangi harga dari total
+            }
+
+            document.getElementById("total").value = total; // Update total
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Daftar Menu Makanan</h1>
+    <label>
+        <input type="checkbox" value="5000" id="menu1" onclick="hitung(this);" /> Ayam Goreng Rp. 5.000
+    </label><br />
+    <label>
+        <input type="checkbox" value="500" id="menu2" onclick="hitung(this);" /> Tempe Goreng Rp. 500
+    </label><br />
+    <label>
+        <input type="checkbox" value="2500" id="menu3" onclick="hitung(this);" /> Telur Dadar Rp. 2.500
+    </label><hr />
+    <strong>Total Bayar Rp. <input id="total" type="text" readonly /></strong>
+</body>
+
+</html>
+```
+hasil browsernya!!
+
