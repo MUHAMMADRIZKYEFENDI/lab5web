@@ -47,7 +47,7 @@ hasil browser nya sebagai berikut!!!
 </html>
 ```
 hasil browsernya!!!
-
+![Screenshot (257)](https://github.com/user-attachments/assets/20e92478-8a6a-4f4a-99db-b313c69b4437)
 ### 2.Pemakaian method dalam objek 
 ```
 <!DOCTYPE html>
@@ -74,3 +74,42 @@ hasil browsernya!!!
 hasil browsernya!!
 ![Screenshot (256)](https://github.com/user-attachments/assets/957be0c5-5dff-4480-945a-b6c92b506564)
 
+### 3.Pemakaian Prompt
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pemasukan data</title>
+</head>
+<body>
+    <script>
+        var nama = prompt("Masukkan nama anda", "nama lengkap");
+        document.write("Hai, " + nama);
+    </script>
+</body>
+</html>
+```
+hasil browsernya!!
+
+### 4.Pembuatan fungsi dan cara pemanggilannya
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Pembuatan Fungsi</title>
+</head>
+<body>
+    <script>
+        function pesan() {
+            alert("Memanggil javascript lewat fungsi");
+        }
+    </script>
+
+    <button onclick="pesan()">Klik Saya</button>
+</body>
+</html>
+```
+hasil browsernya!!!
+# Dasar Pemrograman Di Javascript 
+### 1.Operasi dasar aritmatika
+```
